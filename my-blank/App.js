@@ -1,25 +1,26 @@
 /* ZONA 1: IMPORTACIONES */
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, Switch } from 'react-native';
 import React, {useState} from 'react';
 
 const Texto = ({style}) => {
   const [contenido, setContenido] = useState("Hola Mundo RNative"); 
   const actualizaTexto = () => {setContenido('ESTADO ACTUALIZADO DEL TEXT')}
   return (
-    <View>
-      <Text style = {[styles.text, style]} onPress={actualizaTexto}>{contenido}</Text>
+    <View Style = {{margin: 10}}>
+      <Text Style = {[styles.text, style]}>{contenido}</Text>
+      <Button title = "Actualizar Texto" onPress = {actualizaTexto} color = "red"/>
     </View>
-  );
-};
+  )
+}
+
+const[isEnabled, setIsEnabled] = useState(false);
+const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
 /* ZONA2: MAIN */
 export default function App() {
   return (
     <View style={styles.container}>
-      <Texto style = {styles.red}></Texto>
-      <Texto style = {styles.blue}></Texto>
-      <Texto style = {styles.green}></Texto>
       <StatusBar style="auto" />
     </View>
   );
