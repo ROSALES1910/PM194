@@ -4,7 +4,7 @@
     "slug": "my-blank",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/descarga.jpg",
+    "icon": "./assets/yo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {

@@ -1,7 +1,7 @@
 /* Zona 1: Importaciones */
 import * as SplashScreen from 'expo-splash-screen';
 import React, {useEffect, useState} from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -15,32 +15,43 @@ export default function App() {
         await SplashScreen.hideAsync();
     }, 2000);
   }, []);
+
+  return (
+    <ImageBackground
+      source = {require('./assets/descarga.jpg')}
+      style={styles.background}
+      resizeMode = "cover">
+      <View style={styles.container}>
+        <Text style={styles.title}>BIENVENIDO A MI APLICACIÓN</Text>
+        <Text style={styles.subtitle}>
+          {appReady ? 'CARGA COMPLETA' : 'CARGANDO...'}
+        </Text>
+      </View>
+    </ImageBackground>
+  );
 }
 
 /* Estilos */
 const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+  },
   container: {
-    flexGrow: 1,
-    backgroundColor: '#f0f0f0',
-    alignItems: 'center',
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
     justifyContent: 'center',
-    padding: 20,
+    alignItems: 'center',
   },
   title: {
-    fontSize: 17,
-    color: '#333',
-    marginBottom: 6,
-    alignSelf: 'flex-start',
+    color: 'white',
+    fontSize: 32,
+    fontWeight: 'bold',
+    marginBottom: 10,
   },
-  input: {
-    height: 44,
-    borderColor: '#bbb',
-    borderWidth: 1,
-    paddingHorizontal: 10,
-    marginBottom: 16,
-    borderRadius: 8,
-    backgroundColor: '#fff',
-    width: '100%',
-    fontSize: 15,
-  },
+  subtitle: {
+    color: 'white',
+    fontSize: 18,
+  }
 });
