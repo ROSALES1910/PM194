@@ -1,57 +1,167 @@
 /* Zona 1: Importaciones */
 import * as SplashScreen from 'expo-splash-screen';
 import React, {useEffect, useState} from 'react';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, ScrollView } from 'react-native';
 
 SplashScreen.preventAutoHideAsync();
 
 /* Zona 2: Main */
 export default function App() {
-  const [appReady, setAppready] = useState(false);
-
-  useEffect(() => {
-    setTimeout(async() => {
-      setAppready(true);
-        await SplashScreen.hideAsync();
-    }, 2000);
-  }, []);
-
   return (
-    <ImageBackground
-      source = {require('./assets/descarga.jpg')}
-      style={styles.background}
-      resizeMode = "cover">
-      <View style={styles.container}>
-        <Text style={styles.title}>BIENVENIDO A MI APLICACIÓN</Text>
-        <Text style={styles.subtitle}>
-          {appReady ? 'CARGA COMPLETA' : 'CARGANDO...'}
-        </Text>
-      </View>
-    </ImageBackground>
-  );
+    <ScrollView contentContainerStyle = {styles.backgrouns} showsVerticalScrollIndicator={false} horizontal={true}>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+      <Text>HOLA MUNDO</Text>
+    </ScrollView>
+  )
 }
 
 /* Estilos */
 const styles = StyleSheet.create({
-  background: {
+  backgrouns: {
     flex: 1,
     width: '100%',
     height: '100%',
-  },
-  container: {
-    flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.5)',
     justifyContent: 'center',
     alignItems: 'center',
+  }, 
+  overlay: {
+    flex: 1,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 50,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
-  title: {
-    color: 'white',
-    fontSize: 32,
+  text: {
+    color: 'black',
+    fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 10,
+    textAlign: 'center',
   },
-  subtitle: {
-    color: 'white',
-    fontSize: 18,
-  }
 });
