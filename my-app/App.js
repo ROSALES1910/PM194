@@ -20,7 +20,7 @@ export default function App() {
 
       {loading ? (
         <>
-          <ActivityIndicator size="large" color="#2D9CDB" />
+          <ActivityIndicator size="small" color="#2D9CDB" />
           <Text style={styles.texto}>Cargando...</Text>
         </>
       ) : (
