@@ -12,7 +12,7 @@ export default function App() {
   const [frutas, setFrutas] = useState([]);
   const [verduras, setVerduras] = useState([]);
   const [loading, setLoading] = useState(true);
-  const API_URL = "http://127.0.0.1:8000/productos/"; // Cambia esto según tu API
+  const API_URL = "http://10.16.37.149:8000/productos/"; // Cambia esto según tu API
 
   useEffect(() => {
     fetch(API_URL)
