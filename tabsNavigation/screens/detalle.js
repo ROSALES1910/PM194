@@ -1,6 +1,19 @@
 import { View, Text, StyleSheet } from 'react-native';
+import { useFocusEffect } from '@react-navigation/native';
+import { useCallback } from 'react';
 
-export default function Detalle() {
+export default function Detalle({ navigation }) {
+  useFocusEffect(
+    useCallback(() => {
+      const parent = navigation.getParent();
+      parent?.setOptions({ tabBarStyle: { display: 'none' } });
+
+      return () => {
+        parent?.setOptions({ tabBarStyle: { display: 'flex', height: 10 } }); 
+      };
+    }, [navigation])
+  );
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Detalles Usuario</Text>
