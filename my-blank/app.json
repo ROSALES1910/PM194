@@ -20,13 +20,19 @@
         "foregroundImage": "./assets/yo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.rosales_1910.myblank"
     },
     "web": {
       "favicon": "./assets/yo.png"
     },
     "plugins": [
       "expo-splash-screen"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d2f070d7-f5f6-4c1b-90ef-4640fb7928f6"
+      }
+    }
   }
 }
